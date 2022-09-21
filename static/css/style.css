@@ -1,0 +1,186 @@
+:root {
+	--primary-color: #444791;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	/*Freshman; */
+}
+
+
+.card {
+	border-radius: 13px;
+	border: none;
+}
+
+.card-heading {
+	font-weight: bold;
+	font-family: ;
+}
+
+.form-control {
+	border: none;
+	border-radius: 10px;
+	background: rgba(165, 147, 69, 0.075);
+}
+
+.btn {
+	border: 1px solid #2979FF;
+	border-radius: 10px;
+	width: 120px;
+}
+
+.forgot {
+	font: #00ACC1;
+	font-weight: bold;
+	color: #26C6DA;
+	font-size: 15px;
+	padding-left: 35px;
+}
+
+
+.form-control:focus {
+	color: #495057;
+	border-color: #fff !important;
+	outline: 0;
+	box-shadow: 0 0 0 0 rgba(0, 123, 255, .25) !important
+}
+
+a {
+	text-decoration: none !important;
+}
+
+
+
+/* Login Page */
+
+
+.background-radial-gradient {
+	background-color: hsl(218, 41%, 15%);
+	background-image: radial-gradient(650px circle at 0% 0%,
+			hsl(218, 41%, 35%) 15%,
+			hsl(218, 41%, 30%) 35%,
+			hsl(218, 41%, 20%) 75%,
+			hsl(218, 41%, 19%) 80%,
+			transparent 100%),
+		radial-gradient(1250px circle at 100% 100%,
+			hsl(218, 41%, 45%) 15%,
+			hsl(218, 41%, 30%) 35%,
+			hsl(218, 41%, 20%) 75%,
+			hsl(218, 41%, 19%) 80%,
+			transparent 100%);
+
+	height: 100vh;
+}
+
+#radius-shape-1 {
+	height: 220px;
+	width: 220px;
+	top: -60px;
+	left: -130px;
+	background: radial-gradient(#44006b, #ad1fff);
+	overflow: hidden;
+}
+
+#radius-shape-2 {
+	border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+	bottom: -60px;
+	right: -110px;
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(#44006b, #ad1fff);
+	overflow: hidden;
+}
+
+.bg-glass {
+	background-color: hsla(0, 0%, 100%, 0.9) !important;
+	backdrop-filter: saturate(200%) blur(25px);
+}
+
+.login-form {
+	margin-top: 8%;
+}
+
+
+.modal-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.btn-close {
+	position: absolute;
+	right: 0;
+	padding: 1em;
+}
+
+h1 {
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+.myform {
+	padding: 2em;
+	max-width: 100%;
+	color: #fff;
+	box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+
+	@media (max-width: 576px) {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.form-control:focus {
+	box-shadow: inset 0 -1px 0 #7e7e7e;
+}
+
+.form-control {
+	background-color: var(--primary-color);
+	color: #fff;
+	padding-left: 10px;
+	border: 0;
+	border-radius: 10px;
+	border-bottom: 1px solid #fff;
+}
+
+form .btn {
+	color: #fff;
+	font-weight: 800;
+	background-color: var(--primary-color);
+	border-radius: 10px;
+	padding: 0.5em 0;
+}
+
+form .btn:hover {
+	background-color: #8CB1F3 !important;
+	color: #fff;
+	border-color: #fff;
+}
+
+button:hover{
+	background-color: #8CB1F3 !important;
+	border: var(--primary-color);
+}
+
+p {
+	text-align: center;
+	padding-top: 2em;
+	color: grey;
+}
+
+p a {
+	color: #e1e1e1;
+	text-decoration: none;
+}
+
+p a:hover {
+	color: #fff;
+}

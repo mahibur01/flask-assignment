@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% block page %}
+<div class="container-fluid py-3" class="height: 100vh;">
+  <div class="d-grid gap-3" style="grid-template-columns: 1fr 5fr">
+    <div class="bg-light border rounded-3" style="height: 100vh">
+      <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; border-radius: 10px;">
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-light" aria-current="page"
+              style="background-color: #444791; border-radius: 0px">
+              Posts
+            </a>
+          </li>
+          <a href="/users/logout" class="nav-link text-dark " style="margin-top: 530px;">
+            <button class="btn btn-light">Logout</button>
+          </a>
+        </ul>
+      </div>
+
+    </div>
+    <div class="bg-light border rounded-3" style="padding: 17px">
+      <table class="table table-responsive-sm" style="text-align: center">
+        <thead class="text-light pe-5 rounded-3" style="background-color: #444791">
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Category</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for post in posts %}
+          <tr>
+            <th scope="row">{{post['id']}}</th>
+            <td>{{post['title']}}</td>
+            <td>{{post['category']}}</td>
+            <td>{{post['brand']}}</td>
+            <td><a href="">View</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

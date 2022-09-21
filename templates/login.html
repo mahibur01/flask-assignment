@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block page %}
+<!-- Section: Design Block -->
+<section class="background-radial-gradient">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start">
+        <div class="row gx-lg-5 align-items-center mb-5 login-form">
+            <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <h1 class="my-5 text-center display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    <img src="{{ url_for('static',filename='photos/w3logo-main.png') }}" class="py-5" alt="mdo"
+                        width="auto" height="auto" />
+                    Welcome to <br />
+                    <span style="color: hsl(218, 81%, 75%)">W3 Engineers Team</span>
+                </h1>
+                <p class="mb-5 opacity-70" style="color: hsl(218, 81%, 85%)">
+                    W3Engineers is a leading software, mobile app, and blockchain-enabled application development
+                    company from Bangladesh that utilizes – the latest technology, creative design and optimized
+                    business strategy to help businesses grow their brand.
+                </p>
+            </div>
+
+            <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+
+
+                <div class="card bg-glass">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <form action="" method="POST">
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example3">Username</label>
+                                <input type="text" placeholder="Enter Your Username" name="username" required 
+                                    class="form-control" />
+
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <label class="form-label" for="form3Example4">Password</label>
+                                <input type="password" placeholder="Enter Your Password" name="password" 
+                                    class="form-control" />
+
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" value="Sign In" class="btn btn-block mb-4">
+                                Sign up
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
